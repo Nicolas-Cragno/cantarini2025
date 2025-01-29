@@ -1,0 +1,33 @@
+.header{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+
+.logoPrincipal{
+    color: white;
+    width: 8vh;
+}
+
+.userImg{
+    width: 4vh;
+    margin: 1vh;
+}
+
+/*
+.userName{}
+.leftHeader{}
+.rightHeader{}
+*/
+
+@media screen and (max-width:600px) {
+    .userName{
+        display: none;
+    }
+    
+    .userImg{
+        color: red;
+        width: 6vh;
+    }
+}

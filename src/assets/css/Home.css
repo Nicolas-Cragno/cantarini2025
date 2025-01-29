@@ -1,0 +1,5 @@
+.homePage{
+    background-image: url("../statics/truckBackground.svg");
+    background-size: cover;
+    background-position: center;
+}
