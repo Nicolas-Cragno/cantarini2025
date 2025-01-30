@@ -1,11 +1,13 @@
 .menuPrincipal{
     background-color: grey;
-    width: 20%;
+    width: 5%;
     height: 90vh;
     color: white;
+    word-wrap: break-word;
 }
 
 .menuOption{
+    display: none;
     padding: 1vh;
     margin-bottom: 5vh;
     opacity: calc(0.7);
@@ -21,15 +23,17 @@
 }
 
 .bigOptionLogo{
+    display: none;
     width: 8vh;
     margin: 1vh;
     opacity: calc(0.7);
-    display: none;
 }
 
 .bigOptionLogo:hover{
     opacity: calc(1);
 }
+
+/*
 
 @media screen and (max-width:1100px) {
     .menuOption{
@@ -40,3 +44,4 @@
         display: flex;
     }
 }
+*/
