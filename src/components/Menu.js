@@ -5,6 +5,7 @@ import optionLogo1 from '../assets/statics/plusLogo.svg';
 import optionLogo2 from '../assets/statics/foundLogo.svg';
 import optionLogo3 from '../assets/statics/driverLogo.svg';
 import optionLogo4 from '../assets/statics/graphLogo.svg';
+import Carga from '../containers/Carga';
 /* comentario innecesario */
 
 export default function Menu() {
@@ -57,7 +58,7 @@ export default function Menu() {
                     </Row>
                 </Col>
                 <Col md={11} id='pageOne'>
-                    <h1>Nueva Carga</h1>
+                    <Carga></Carga>
                 </Col>
                 <Col md={11} id='pageTwo'>
                     <h1>Viajes</h1>
