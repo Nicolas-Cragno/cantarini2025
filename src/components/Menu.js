@@ -9,24 +9,64 @@ import optionLogo4 from '../assets/statics/graphLogo.svg';
 
 export default function Menu() {
     const activarOpcion1 = () => {
-        console.log("fasfafa")
+        document.getElementById('pageOne').style.display="flex";
+        document.getElementById('pageTwo').style.display="none";
+        document.getElementById('pageThree').style.display="none";
+        document.getElementById('pageFour').style.display="none";
     }
+    
+    const activarOpcion2 = () => {
+        document.getElementById('pageOne').style.display="none";
+        document.getElementById('pageTwo').style.display="flex";
+        document.getElementById('pageThree').style.display="none";
+        document.getElementById('pageFour').style.display="none";
+    };
+
+    const activarOpcion3 = () => {
+        document.getElementById('pageOne').style.display="none";
+        document.getElementById('pageTwo').style.display="none";
+        document.getElementById('pageThree').style.display="flex";
+        document.getElementById('pageFour').style.display="none";
+    }
+    
+    const activarOpcion4 = () => {
+        document.getElementById('pageOne').style.display="none";
+        document.getElementById('pageTwo').style.display="none";
+        document.getElementById('pageThree').style.display="none";
+        document.getElementById('pageFour').style.display="flex";
+    };
   return (
     <>
     <div>
         <Container fluid>
-            <Row className='menuPrincipal centrado' id='menuPrincipal'>
-                <Col xl={12} className='menuOption centrado'>
-                    <img src={optionLogo1} className='optionLogo' alt='' onClick={activarOpcion1}></img>
+            <Row>
+                <Col md={1}>
+                    <Row className='menuPrincipal centrado' id='menuPrincipal'>
+                        <Col xl={12} className='menuOption centrado'>
+                            <img src={optionLogo1} className='optionLogo' alt='' onClick={activarOpcion1}></img>
+                        </Col>
+                        <Col xl={12} className='menuOption centrado'>
+                            <img src={optionLogo2} className='optionLogo' alt='' onClick={activarOpcion2}></img>
+                        </Col>
+                        <Col xl={12} className='menuOption centrado'>
+                            <img src={optionLogo3} className='optionLogo' alt='' onClick={activarOpcion3}></img>
+                        </Col>
+                        <Col xl={12} className='menuOption centrado'>
+                            <img src={optionLogo4} className='optionLogo' alt='' onClick={activarOpcion4}></img>
+                        </Col>
+                    </Row>
                 </Col>
-                <Col xl={12} className='menuOption centrado'>
-                    <img src={optionLogo2} className='optionLogo' alt=''></img>
+                <Col md={11} id='pageOne'>
+                    <h1>Nueva Carga</h1>
                 </Col>
-                <Col xl={12} className='menuOption centrado'>
-                    <img src={optionLogo3} className='optionLogo' alt=''></img>
+                <Col md={11} id='pageTwo'>
+                    <h1>Viajes</h1>
                 </Col>
-                <Col xl={12} className='menuOption centrado'>
-                    <img src={optionLogo4} className='optionLogo' alt=''></img>
+                <Col md={11} id='pageThree'>
+                    <h1>Choferes</h1>
+                </Col>
+                <Col md={11} id='pageFour'>
+                    <h1>Comparativas</h1>
                 </Col>
             </Row>
         </Container>

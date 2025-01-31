@@ -26,6 +26,22 @@
     opacity: calc(1);
 }
 
+#pageOne{
+    display: none;
+}
+
+#pageTwo{
+    display: none;
+}
+
+#pageThree{
+    display: none;
+}
+
+#pageFour{
+    display: none;
+}
+
 /*
 
 @media screen and (max-width:1100px) {
