@@ -1,39 +1,36 @@
 import React from 'react';
 import '../assets/css/Menu.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import optionLogo from '../assets/statics/repairLogo.png';
+import optionLogo1 from '../assets/statics/plusLogo.svg';
+import optionLogo2 from '../assets/statics/foundLogo.svg';
+import optionLogo3 from '../assets/statics/driverLogo.svg';
+import optionLogo4 from '../assets/statics/graphLogo.svg';
+/* comentario innecesario */
 
 export default function Menu() {
-    const desplegarMenu = () => {
-        document.getElementById('menuPrincipal').style.width="20%";
-        document.getElementById('menuPrincipal').style.transition="1s";
-        setTimeout(() => {
-            document.getElementById('opcionOculta').style.display="flex";
-            document.getElementById('opcionOculta').style.transition="2s";
-        }, 400);
+    const activarOpcion1 = () => {
+        console.log("fasfafa")
     }
-
-    const ocultarMenu = () => {
-        document.getElementById('menuPrincipal').style.width="5%";
-        document.getElementById('menuPrincipal').style.transition="1s";
-        document.getElementById('opcionOculta').style.display="none";
-    }
-
   return (
-    <div className='menuPrincipal centrado' id='menuPrincipal' onMouseOver={desplegarMenu} onMouseLeave={ocultarMenu}>
-        <Container>
-            <Row>
-                <Col xl={12} className='centrado'>
-                    <img src={optionLogo} className='bigOptionLogo' alt='' id='opcionActiva'></img>
-                    <h4 className='menuOption centrado' id='opcionOculta'>
-                        <img src={optionLogo} className='smallOptionLogo' alt=''></img>
-                        NUEVA CARGA
-                    </h4>
+    <>
+    <div>
+        <Container fluid>
+            <Row className='menuPrincipal centrado' id='menuPrincipal'>
+                <Col xl={12} className='menuOption centrado'>
+                    <img src={optionLogo1} className='optionLogo' alt='' onClick={activarOpcion1}></img>
+                </Col>
+                <Col xl={12} className='menuOption centrado'>
+                    <img src={optionLogo2} className='optionLogo' alt=''></img>
+                </Col>
+                <Col xl={12} className='menuOption centrado'>
+                    <img src={optionLogo3} className='optionLogo' alt=''></img>
+                </Col>
+                <Col xl={12} className='menuOption centrado'>
+                    <img src={optionLogo4} className='optionLogo' alt=''></img>
                 </Col>
             </Row>
         </Container>
-
-
     </div>
+    </>
   )
 }

@@ -1,13 +1,12 @@
 .menuPrincipal{
     background-color: grey;
-    width: 5%;
+    width: 10vh;
     height: 90vh;
     color: white;
     word-wrap: break-word;
 }
 
 .menuOption{
-    display: none;
     padding: 1vh;
     margin-bottom: 5vh;
     opacity: calc(0.7);
@@ -17,19 +16,13 @@
     opacity: calc(1);
 }
 
-.smallOptionLogo{
-    width: 4vh;
-    margin: 1vh;
-}
-
-.bigOptionLogo{
-    display: none;
-    width: 8vh;
+.optionLogo{
+    width: 7vh;
     margin: 1vh;
     opacity: calc(0.7);
 }
 
-.bigOptionLogo:hover{
+.optionLogo:hover{
     opacity: calc(1);
 }
 
