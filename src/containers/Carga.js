@@ -29,12 +29,6 @@ export default function Carga() {
                     <Row>
                       <Col xs={12} className='windowScroll'>
                         <ItemCarga nro='1'></ItemCarga>
-                        <ItemCarga nro='2'></ItemCarga>
-                        <ItemCarga nro='3'></ItemCarga>
-                        <ItemCarga nro='4'></ItemCarga>
-                        <ItemCarga nro='5'></ItemCarga>
-                        <ItemCarga nro='6'></ItemCarga>
-                        <ItemCarga nro='7'></ItemCarga>
                       </Col>
                       <Col xs={12}>
                        <ItemCarga nro='@'></ItemCarga>
@@ -47,14 +41,17 @@ export default function Carga() {
                     <ItemDescript descript='litros satelital' title='1550'></ItemDescript>
                   </Col>
                 </Row>
-                <Col xs={12} className='nuevaCargaUnder centrado ocuparTercio'>
-                  <div className='underBox'>
-                    <ItemDescript descript='litros-diferencia' title='45,25'></ItemDescript>
-                  </div>
-                  <div className='underBox'>
-                    <ItemDescript descript='lts cada 100 km' title='26,02'></ItemDescript>
-                  </div>
-                </Col>
+                  <Col md={10} className='nuevaCargaUnder centrado ocuparTercio'>
+                    <div className='underBox'>
+                      <ItemDescript descript='litros-diferencia' title='45,25'></ItemDescript>
+                    </div>
+                    <div className='underBox'>
+                      <ItemDescript descript='lts cada 100 km' title='26,02'></ItemDescript>
+                    </div>
+                    <div className='underBox2'>
+                      <button className='underBtn'>CARGAR</button>
+                    </div>
+                  </Col>
             </Row>
         </Container>
     </>
