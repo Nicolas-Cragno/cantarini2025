@@ -1,9 +1,73 @@
 .nuevaCarga{
-    background-color: blue;
-    width: 100%;
+    backdrop-filter: blur(5px); 
 }
 
-.a{
+.nuevaCargaTop{
+    width: 100%;
+    height: 20vh;
+}
+
+.nuevaCargaCenterLeft{
+    border-style: ridge;
+    border-width: 1px;
+    border-color: black;
+    height: 40vh;
+}
+
+.windowScroll{
+    height: 30vh;
+    overflow: scroll;
+    overflow-x:auto; 
+}
+
+.nuevaCargaCenterRight{
+    display: block;
+    height: 40vh;
+}
+
+.nuevaCargaUnder{
+    padding: 25px;
+    width: 100%;
+    height: 20vh;
+}
+
+label{
+    margin: 1vh;
+    font-weight: bold;
+}
+
+.itemCarga{
+    height: 6vh;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+    background-color: black;
+    color: white;
+}
+
+.itemCargaNumber{
+    width: 5vh;
+    border-right-style: ridge;
+    border-color: black;
+}
+
+.itemDescript{
+    margin: 5px;
+}
+
+.itemDescriptLabel{
+    width: 50%;
+    font-variant: small-caps;
+    border-bottom-style: ridge;
+    border-color: black;
+    border-width: 1px;
+}
+
+.itemDescriptTitle{
+    margin-left: 10vh;
+}
+
+.underBox{
+    margin: 10px;
     background-color: red;
-    width: 100vh;
 }
