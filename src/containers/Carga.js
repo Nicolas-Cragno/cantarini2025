@@ -5,6 +5,10 @@ import ItemCarga from '../components/ItemCarga';
 import ItemDescript from '../components/ItemDescript';
 
 export default function Carga() {
+  const nuevaCarga = () => {
+    let windowContext = document.getElementById("ventanaCargas");
+    windowContext.prepend(ItemCarga('1'));
+  };
   return (
     <>
         <Container fluid className='nuevaCarga centrado'>
@@ -29,6 +33,11 @@ export default function Carga() {
                     <Row>
                       <Col xs={12} className='windowScroll'>
                         <ItemCarga nro='1'></ItemCarga>
+                        <div id='ventanaCargas'>
+                        <button className='btnStyle' onClick={nuevaCarga}>
+                        + añadir carga
+                        </button>
+                        </div>
                       </Col>
                       <Col xs={12}>
                        <ItemCarga nro='@'></ItemCarga>
@@ -48,8 +57,8 @@ export default function Carga() {
                     <div className='underBox'>
                       <ItemDescript descript='lts cada 100 km' title='26,02'></ItemDescript>
                     </div>
-                    <div className='underBox2'>
-                      <button className='underBtn'>CARGAR</button>
+                    <div>
+                      <button className='btnStyle'>CARGAR</button>
                     </div>
                   </Col>
             </Row>

@@ -24,3 +24,12 @@
 .linkLimpio{
     text-decoration: none;
 }
+
+.btnStyle{
+    width: 20vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 2cap;
+    font-variant:small-caps ;
+    background-color: transparent;
+}

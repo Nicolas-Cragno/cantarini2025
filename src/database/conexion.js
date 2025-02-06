@@ -17,4 +17,32 @@ conexion.connect(function(err){
     }
 });
 
+const usuarios = "SELECT * FROM users"; // usuarios
+const choferes = "SELECT * FROM choferes"; // listado de choferes
+const tractores = "SELECT * FROM tractores"; // listado de tractores
+
+conexion.query(usuarios, function(error, listadoUsuarios){
+    if(error){
+        throw error;
+    }else{
+        console.log(listadoUsuarios);
+    }
+});
+
+conexion.query(choferes, function(error, listadoChoferes){
+    if(error){
+        throw error;
+    }else{
+        console.log(listadoChoferes);
+    }
+})
+
+conexion.query(tractores, function(error, listadoTractores){
+    if(error){
+        throw error;
+    }else{
+        console.log(listadoTractores)
+}
+})
+
 conexion.end();
