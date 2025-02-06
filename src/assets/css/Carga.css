@@ -21,7 +21,12 @@
 }
 
 .nuevaCargaCenterRight{
+    background-color: white;
     display: block;
+    margin-left: 21px;
+    border-style: groove;
+    border-radius: 0.5cap;
+    width: 40vh;
     height: 40vh;
 }
 

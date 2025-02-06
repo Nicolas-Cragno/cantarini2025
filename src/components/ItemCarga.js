@@ -6,11 +6,11 @@ export default function ItemCarga(props) {
     <div className='itemCarga izquierda'>
         <h3 className='itemCargaNumber centrado'>{nro}</h3>
         <label>Fecha</label>
-        <input></input>
+        <input type='date'></input>
         <label>Litros</label>
-        <input></input>
+        <input type='number'></input>
         <label>Lugar</label>
-        <input></input>
+        <input type='text'></input>
     </div>
   )
 }
